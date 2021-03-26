@@ -1,0 +1,16 @@
+.hero__button {
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  border: 0;
+  border-radius: 4px;
+
+  min-width: 200px;
+  padding: 10px 32px;
+}

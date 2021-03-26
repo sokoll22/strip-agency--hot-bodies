@@ -1,0 +1,131 @@
+                       /* === Clients section === */
+       /* === Mobile & tablet styles ==== */
+@media screen and (max-width: 1199px) {
+  .clients {
+    &__title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1,178;
+      text-align: center;
+
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+  }
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-left:calc(-1 * var(--card-set-gap)) ;
+  margin-top: calc(-1 * var(--card-set-gap));
+
+  &__item {
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+    flex-basis: calc(100% / 2 - 2 * var(--card-set-gap));
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - 3 * var(--card-set-gap));
+    }
+  }
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px var(--social-icon-color) solid;
+  border-radius: 5px;
+
+  width: 100%;
+  min-height: 90px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 208px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 226px;
+  }
+  
+  transition: border var(--transition-delay-var) var(--timing-func);
+
+    &:hover,
+    &:focus {
+    border:1px var(--accent-color) solid;
+  }
+
+    &__icon {
+      min-width: 45px;
+      max-width: 128px;
+      height: 50px;
+      
+      fill: var(--social-icon-color);
+    
+      transition: fill var(--transition-delay-var) var(--timing-func);
+
+      .clients-link:hover &,
+      .clients-link:focus & {
+        fill: var(--accent-color);
+      }
+    }
+  }
+}
+
+/*==== Desktop styles ====*/
+
+@media screen and (min-width: 1200px) {
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px var(--social-icon-color) solid;
+  border-radius: 5px;
+  
+  width: 170px;
+  height: 90px;
+
+  transition: border var(--transition-delay-var) var(--timing-func);
+
+    &:hover,
+    &:focus {
+    border:1px var(--accent-color) solid;
+  }
+
+    &__icon {
+      min-width: 45px;
+      height: 50px;
+
+      fill: var(--social-icon-color);
+    
+      transition: fill var(--transition-delay-var) var(--timing-func);
+
+      .clients-link:hover &,
+      .clients-link:focus & {
+        fill: var(--accent-color);
+      }
+    }
+  } 
+}

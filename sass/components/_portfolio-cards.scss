@@ -1,0 +1,94 @@
+                             /* === Portfolio CSS === */
+  /* ==== Portfolio  cards */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: -15px;
+
+  & .filter-name {
+    padding: 0;
+  }
+  & .card-header {
+    color: var(--primary-text-color);
+  }
+}
+
+.card {
+  margin: 15px;
+  background: #FFFFFF;
+  outline: 1px solid #EEEEEE;
+  box-sizing: border-box;
+
+  transition: box-shadow var(--transition-delay-var) var(--timing-func);
+
+  & .filter-name {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+} 
+   
+                      /* === Overlay hover effect === */
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; 
+  width: 100%;
+  height: 100%;
+  
+  transform: translateY(100%);
+  transition: transform var(--transition-delay-var) var(--timing-func),
+  opacity var(--transition-delay-var) var(--timing-func);
+
+  color: var(--main-background-color);
+  background:  rgba(33, 150, 243, 0.9);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 63px 24px;
+
+  .card__link:hover &,
+  .card__link:focus & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card__link {
+  display: block;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 24px;
+}
+
+/* === Portfolio Cards === */
+.card-header {
+  font-weight: 700;
+  font-size: 18px;
+  
+  line-height: 2.0;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
+}
+.card-text {
+  color: var(--accent-color);
+}

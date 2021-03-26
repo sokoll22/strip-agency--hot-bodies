@@ -1,0 +1,46 @@
+/* Site nav */
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  & .link.current,
+  & .link:hover,
+  & .link:focus {
+    color: var(--accent-color);
+  }
+
+  & .link {
+    position: relative;
+  
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  
+    transition: color var(--transition-delay-var) var(--timing-func);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+                        /* === Underline for nav items ==== */
+.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  content: "";
+  display: block;
+
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}

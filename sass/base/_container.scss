@@ -1,0 +1,47 @@
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .footer & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+
+    .header & {
+      display: flex;
+      align-items: center;
+      }
+
+    .clients & {
+      padding-bottom: 60px;
+      }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+/* -- Container -- */
+
+/* === end container === */

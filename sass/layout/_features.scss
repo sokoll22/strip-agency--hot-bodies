@@ -1,0 +1,147 @@
+.features {
+  margin-top: 60px;
+}
+.feature__item {
+  width: 100%;
+  min-width: 270px;
+
+  &::before {
+    display: block;
+    content: "";
+
+    background-color: var(--secondary-background-color);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100%;
+    min-width: 270px;
+    min-height: 120px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.icon-antena::before {
+  background-image: url(../../img/features/antenna.png);
+}
+.icon-vector::before {
+  background-image: url(../../img/features/vector1.png);
+}
+.icon-diagram::before {
+  background-image: url(../../img/features/diagram.png);
+}
+.icon-astronaut::before {
+  background-image: url(../../img/features/astronaut.png);
+}
+
+.feature__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.feature__text {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*=== Mobile Styles ====*/
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+  .features {
+    margin-top: 0;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-left: calc(-1 * var(--card-set-gap));
+      margin-top: calc(-1 * var(--card-set-gap));
+    }
+
+    & .container {
+      padding-bottom: 0;
+      margin-bottom: 60px;
+    }
+  }
+
+  .feature__item {
+    margin-left: 30px;
+    margin-top: 30px;
+
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+
+    &::before {
+      margin-top: 0;
+    }
+  }
+}
+
+/* ==== Desktop styles ===*/
+
+@media screen and (min-width: 1200px) {
+  .features {
+    margin-top: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__list {
+      display: flex;
+    }
+  }
+
+  .feature__item {
+    min-width: 270px;
+
+    &::before {
+      display: block;
+      content: "";
+
+      background-color: var(--secondary-background-color);
+      background-repeat: no-repeat;
+      background-position: center;
+
+      width: 270px;
+      height: 120px;
+      
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .feature__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .feature__text {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/*----End features---- */

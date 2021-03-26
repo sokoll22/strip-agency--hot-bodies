@@ -1,0 +1,83 @@
+/* === Subscribe form === */
+@media screen and (max-width: 1199px) {
+  .footer-subscribe {
+    &__title {
+      color: var(--main-background-color);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+
+      margin-bottom: 20px;
+    }
+
+    &__input {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 1.25;
+
+      color: var(--main-background-color);
+      background-color: inherit;
+    
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+
+      width: 100%;
+      max-width: 450px;
+      height: 50px;
+    
+      padding-left: 16px;
+      margin-bottom: 20px;
+    }
+    
+    &__icon {
+      width: 34px;
+      height: 34px;
+
+      padding-left: 10px;
+    }
+  }
+}
+
+                  /* === Subscribe form for desktop === */
+@media screen and (min-width: 1200px) {
+.footer-subscribe {
+  &__title {
+    color: var(--main-background-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+     
+  &__input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: var(--main-background-color);
+    background-color: inherit;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  
+    width: 100%;
+    min-width: 358px;
+    height: 50px;
+  
+    padding-left: 16px;
+  }
+       
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+    
+  &__icon {
+    width: 34px;
+    height: 34px;
+    padding-left: 10px;
+  }
+}
+}

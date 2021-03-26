@@ -1,0 +1,44 @@
+                   /*=== Header ===*/
+.header {
+  width: 100%;
+
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(236, 236, 236, 1);
+} 
+
+@media screen and (max-width:767px) {
+  .site-nav {
+    display: none;
+  }
+  .contacts {
+    display:none;
+  }
+                  /*====  Main flexbox for header ==== */
+    .header {
+      & .logo {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+  }  
+}
+
+                          /*=== Tablet style ===*/
+@media screen and (min-width: 768px) {
+  .header {
+    & .logo {
+      padding: 26px 0;
+      margin-right: 88px;
+    }
+  }
+}
+
+                        /*=== Desktop styles ==== */
+@media screen and (min-width:1200px) {
+  .header  {
+    & .logo {
+      margin-right: 93px;
+      padding: 24px 0 25px 0;
+    }
+  }
+}

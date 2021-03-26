@@ -1,0 +1,35 @@
+/* ===== Social networks list */
+.social-network-list {
+  display: flex;
+  justify-content: space-between;
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      width: 44px;
+      height:44px;
+      border-radius: 50%;
+    
+      transition: background-color var(--transition-delay-var) var(--timing-func);
+
+      &:hover, 
+      &:focus {
+        background-color: var(--accent-color);
+      }
+    }
+
+    &__icon {
+      width: 20px;
+      height: 20px;
+      fill: var(--social-icon-color);
+      
+      transition: fill var(--transition-delay-var) var(--timing-func);
+
+      .social-network-list__link:hover &,
+      .social-network-list__link:focus & {
+        fill: var(--main-background-color);
+      }
+    }
+}

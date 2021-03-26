@@ -1,0 +1,110 @@
+/* Contacts nav flexbox */
+
+/*==== Tablet styles ====*/
+@media screen and (min-width:768px) {
+  .contacts {
+    &__item {
+      margin-left: 84px;
+    }
+  
+    & .link {
+      display: flex;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      
+      color: var(--secondary-text-color);
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      
+      transition: color var(--transition-delay-var) var(--timing-func);
+      }
+  } 
+}
+
+                /*==== Desktop styles ==== */
+@media screen and (min-width:1200px) {
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  
+    & .link {
+      display: flex;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      
+      color: var(--secondary-text-color);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      
+      transition: color var(--transition-delay-var) var(--timing-func);
+      }
+  }
+
+  /* Adding margin-left for all ".contact .items"
+except first one. Reading from bottom to top item. 
+Same to ":not(:last-child) function */
+.contacts__item + .contacts__item {
+  margin-left: 50px;
+  }
+}
+ 
+.mail-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &:hover .icon-envelope,
+  &:focus .icon-envelope {
+    fill: var(--accent-color);
+  }
+}
+
+.icon-envelope {
+  vertical-align: baseline;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+
+  transition: fill var(--transition-delay-var) var(--timing-func);
+
+  .mobile-menu-contacts__link:hover &,
+  .mobile-menu-contacts__link:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.phone-link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+
+  transition: fill var(--transition-delay-var) var(--timing-func);
+
+  .phone-link:hover & , 
+  .phone-link:focus & {
+    fill: var(--accent-color);
+    }
+
+    .mobile-menu-contacts__phone:hover &,
+    .mobile-menu-contacts__phone:focus & {
+      fill: var(--accent-color);
+    }
+}
+/* == end nav == */
