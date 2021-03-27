@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Студия</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/main.min.css">
@@ -19,6 +21,7 @@
         <a href="./index.html" class="logo link">
           Hot<span class="logo__header">Bodies</span>
         </a>
+
         <ul class="site-nav list">
           <li class="site-nav__item">
             <a href="./index.html" class="link current">Студия</a>
@@ -30,6 +33,7 @@
             <a href="" class="link">Контакты</a>
           </li>
         </ul>
+
         <!--  contacts navigation container--> 
         <ul class="contacts list">
           <li class="contacts__item">
@@ -78,12 +82,12 @@
             <ul class="mobile-menu-contacts list">
               <li class="mobile-menu-contacts__item">
                 <a href="phone-to:" class="mobile-menu-contacts__phone link">
-                  +38 096 111 11 11
+                  +38 099 944 04 14
                 </a>
               </li>
               <li class="mobile-menu-contacts__item">
                 <a href="mail-to:" class="mobile-menu-contacts__link link">
-                  info@devstudio.com
+                  hotbodies@gmail.com
                 </a>
               </li>
             </ul>
@@ -110,7 +114,8 @@
     <!-- Hero section -->
     <section class="hero hero__image">
       <div class="container">
-        <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
+        <h1 class="hero__title">Горячий стриптиз<br>
+          <span class="hero__title-right">от лучших девушек страны</span></h1>
         <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
       </div>
     </section> 
@@ -118,7 +123,7 @@
     <!-- Features-->
      <section class="features section-padding-bottom">
       <div class="container">
-        <h2 class="visually-hidden">Особенности</h2>
+        <h2 class="visually-hidden">Стриптиз на заказ</h2>
         <ul class="features__list list">
           <li class="feature__item icon-antena">
             <h3 class="feature__title">Внимание к деталям</h3>
@@ -154,42 +159,89 @@
     <!-- What we do -->
     <section class="our-works section-padding-bottom">
       <div class="container">
-        <h2 class="our-works__title">Чем мы занимаемся</h2>
+        <h2 class="our-works__title visually-hidden">Чем мы занимаемся</h2>
         <ul class="our-works-list">
           <li class="our-works-list__item list">
+
             <picture>
-              <source srcset="./img/our-works/working-man.webp 1x, ./img/our-works/working-man@2x.webp 2x"
+              <source srcset="./img/our-works/mobile/our-works-left-img-mobile.webp 1x, ./img/our-works/mobile/our-works-left-img-mobile@2x.webp 2x"
                 media="(min-width: 1200px)" type="image/webp">
-              <source srcset="./img/our-works/working-man.jpg 1x, ./img/our-works/working-man@2x.jpg 2x"
+              <source srcset="./img/our-works/mobile/our-works-left-img-mobile.jpg 1x, ./img/our-works/mobile/our-works-left-img-mobile@2x.jpg 2x"
                 media="(min-width: 1200px)">
-            
-              <img src="./img/our-works/working-man.jpg" alt="working-man">
+              
+              <source srcset="./img/our-works/tablet/our-works-left-img-tablet.webp 1x, ./img/our-works/tablet/our-works-left-img-tablet@2x.webp  2x"
+                media="(min-width: 768px)" type="image/webp">
+              <source srcset="./img/our-works/tablet/our-works-left-img-tablet.jpg 1x, ./img/our-works/tablet/our-works-left-img-tablet@2x.jpg  2x"
+                media="(min-width: 768px)">
+              
+              <source srcset="./img/our-works/mobile/our-works-left-img-mobile.webp 1x, ./img/our-works/mobile/our-works-left-img-mobile@2x.webp  2x"
+                media="(min-width: 320px)" type="image/webp">
+              <source srcset="./img/our-works/mobile/our-works-left-img-mobile.jpg 1x, ./img/our-works/mobile/our-works-left-img-mobile@2x.jpg  2x"
+                media="(min-width: 320px)">
+              
+              <img src="./img/our-works/mobile/our-works-left-img-mobile.jpg" alt="left-side-image">
             </picture>
+
             <div class="our-works-overlay-container">
               <p class="our-works-overlay-container__title">десктопные приложения</p>
             </div>
           </li>
 
           <li class="our-works-list__item list">
+
             <picture>
-              <source srcset="./img/our-works/cellphones.webp 1x, ./img/our-works/cellphones@2x.webp 2x"
+              <source
+                srcset="./img/our-works/mobile/our-works-left-img-mobile.webp 1x, ./img/our-works/mobile/our-works-left-img-mobile@2x.webp 2x"
                 media="(min-width: 1200px)" type="image/webp">
-              <source srcset="./img/our-works/cellphones.jpg 1x, ./img/our-works/cellphones@2x.jpg 2x"
+              <source
+                srcset="./img/our-works/mobile/our-works-left-img-mobile.jpg 1x, ./img/our-works/mobile/our-works-left-img-mobile@2x.jpg 2x"
                 media="(min-width: 1200px)">
-              <img src="./img/our-works/cellphones.jpg" alt="cellphones">
+            
+              <source srcset="./img/our-works/tablet/our-works-central-img-tablet.webp 1x, ./img/our-works/tablet/our-works-central-img-tablet@2x.webp  2x"
+                media="(min-width: 768px)" type="image/webp">
+              <source srcset="./img/our-works/tablet/our-works-central-img-tablet.jpg 1x, ./img/our-works/tablet/our-works-central-img-tablet@2x.jpg  2x"
+                media="(min-width: 768px)">
+            
+              <source
+                srcset="./img/our-works/mobile/our-works-central-img-mobile.webp 1x, ./img/our-works/mobile/our-works-central-img-mobile@2x.webp  2x"
+                media="(min-width: 320px)" type="image/webp">
+              <source
+                srcset="./img/our-works/mobile/our-works-central-img-mobile.jpg 1x, ./img/our-works/mobile/our-works-central-img-mobile@2x.jpg  2x"
+                media="(min-width: 320px)">
+            
+              <img src="./img/our-works/mobile/our-works-central-img-mobile.jpg" alt="left-side-image">
             </picture>
+            
             <div class="our-works-overlay-container">
               <p class="our-works-overlay-container__title">мобильные приложения</p>
             </div>
           </li>
           
           <li class="our-works-list__item list">
+
             <picture>
-              <source srcset="./img/our-works/tablet.webp 1x, ./img/our-works/tablet@2x.webp 2x" media="(min-width: 1200px)"
-                type="image/webp">
-              <source srcset="./img/our-works/tablet.jpg 1x, ./img/our-works/tablet@2x.jpg 2x" media="(min-width: 1200px)">
-              <img src="./img/our-works/tablet.jpg" alt="tablet">
+              <source
+                srcset="./img/our-works/mobile/our-works-left-img-mobile.webp 1x, ./img/our-works/mobile/our-works-left-img-mobile@2x.webp 2x"
+                media="(min-width: 1200px)" type="image/webp">
+              <source
+                srcset="./img/our-works/mobile/our-works-left-img-mobile.jpg 1x, ./img/our-works/mobile/our-works-left-img-mobile@2x.jpg 2x"
+                media="(min-width: 1200px)">
+            
+              <source srcset="./img/our-works/tablet/our-works-right-img-tablet@2x.webp 1x, ./img/our-works/tablet/our-works-right-img-tablet@2x.webp  2x"
+                media="(min-width: 768px)" type="image/webp">
+              <source srcset="./img/our-works/tablet/our-works-right-img-tablet@2x.jpg 1x, ./img/our-works/tablet/our-works-right-img-tablet@2x.jpg  2x"
+                media="(min-width: 768px)">
+            
+              <source
+                srcset="./img/our-works/mobile/our-works-right-img-mobile.webp 1x, ./img/our-works/mobile/our-works-right-img-mobile@2x.webp  2x"
+                media="(min-width: 320px)" type="image/webp">
+              <source
+                srcset="./img/our-works/mobile/our-works-right-img-mobile.jpg 1x, ./img/our-works/mobile/our-works-right-img-mobile@2x.jpg  2x"
+                media="(min-width: 320px)">
+            
+              <img src="./img/our-works/mobile/our-works-right-img-mobile.jpg" alt="left-side-image">
             </picture>
+
             <div class="our-works-overlay-container">
               <p class="our-works-overlay-container__title">дизайнерские решения</p>
             </div>
@@ -491,7 +543,7 @@
       <div class="contacts-and-soc-links">
           <div class="footer-contacts">
             <a href="" class="logo link">
-              Web<span class="logo__footer">Studio</span>
+              Hot<span class="logo__footer">Bodies</span>
             </a>
             <ul class="footer-contacts-list">
               <li class="footer-contacts-list__item list">

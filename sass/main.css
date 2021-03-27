@@ -1,31 +1,4 @@
-@charset "UTF-8";
 /* UTILS*/
-/* цвет основного текста color: #212121;
-цвет вторичного текста   color: #757575;
-основной цвет background: #FFFFFF;
-цвет Hero & footer #2F303A
-акцент цвет #e50085;
-цвет background команды #F5F4FA
- */
-/* Declaring Variables */
-:root {
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
-  --main-background-color: #ffffff;
-  --secondary-background-color: #F5F4FA;
-  --hero-background-color: #2F303A;
-  --footer-background-color: #2F303A;
-  --footer-adress-color: rgba(255, 255, 255, 1);
-  --footer-link-color: rgba(255,255,255,0.6);
-  --logo-footer-second-part-color: #ffffff;
-  --logo-header-second-part-color: #000000;
-  --social-icon-color: #AFB1B8;
-  --hero-background-color: #C4C4C4;
-  --timing-func: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-delay-var: 250ms;
-  --card-set-gap: 30px;
-}
-
 /* Class visually-hidden for headers */
 .visually-hidden {
   position: absolute !important;
