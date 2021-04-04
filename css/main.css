@@ -1631,7 +1631,7 @@ Same to ":not(:last-child) function */
 }
 
 .our-works-overlay-container__title {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: var(--main-background-color);
   font-weight: 400;
   font-size: 14px;
