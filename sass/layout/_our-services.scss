@@ -1,0 +1,29 @@
+/* ==== Our services section ===== */ 
+.our-services {
+  width: 100%;
+  padding: 60px 15px;
+  font-weight: 400;
+  background-color: #ccc;
+  margin-bottom: 60px;
+  text-align: center;
+ 
+  &__title {
+    font-weight: 600;
+    color: var(--our-services-title-color);
+    line-height: 1.4em;
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__name {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
